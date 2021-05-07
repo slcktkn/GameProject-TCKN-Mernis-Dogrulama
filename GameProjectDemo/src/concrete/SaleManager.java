@@ -13,14 +13,16 @@ public class SaleManager implements ISaleService {
 @Override
 public void sell(Customer customer, Order order, Game[] games) {
 	
-	
 	double price = 0;
+	double discountRatio = 0.96;
+	double totalPrice;
 	
 	for(Game game:games) {
 		if(customer.isStudent()) {
-		price +=game.getGamePrice()*0.96;	
-			System.out.println("game ordered for: "+customer.getFirstName()+"game name: "+game.getGameName()+" discount price is: "+price);
-		
+			price = game.getGamePrice();	
+			System.out.println("game ordered for: "+customer.getFirstName()+" game name: "+game.getGameName()+" discount price is: "+price*discountRatio+"TL");
+			price += game.getGamePrice();
+			System.out.println("Price= "+ price);
 	}else {
 		price = game.getGamePrice();
 		System.out.println("game ordered for: "+customer.getFirstName());
