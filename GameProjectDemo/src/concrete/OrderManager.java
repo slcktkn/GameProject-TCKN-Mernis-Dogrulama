@@ -7,7 +7,7 @@ public class OrderManager implements IOrderService {
 
 	@Override
 	public void add(Order order) {
-		System.out.println("Order added: "+order.getOrderId());
+		System.out.println("Order Id: "+order.getOrderId()+" --  "+"Order shipmentcity: "+order.getShipmentCity());
 		
 	}
 

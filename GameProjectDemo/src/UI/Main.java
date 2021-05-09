@@ -20,9 +20,6 @@ public class Main {
 		GameManager gameManager = new GameManager();
 		OrderManager orderManager = new OrderManager();
 		
-	
-		Order order = new Order(1,1,1,1,"Gaziantep");
-		orderManager.add(order);
 		
 		Customer selcuk = new Customer(1,"Selçuk","Tekin","12345678901",1987,false,true);
 		customerManager.add(selcuk);
@@ -37,10 +34,13 @@ public class Main {
 		
 		Game[] games= new Game[] {game1,game2};
 		
+		Order order = new Order(1,1,1,1,"Gaziantep");
+		
 		SaleManager saleManager = new SaleManager();
 		saleManager.sell(selcuk,order,games);
 		
 		
+		orderManager.add(order);
 
 	}
 

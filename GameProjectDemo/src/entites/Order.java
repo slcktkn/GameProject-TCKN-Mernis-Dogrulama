@@ -12,7 +12,7 @@ public class Order implements IEntity {
 	
 	public Order() {
 		super();
-		// TODO Auto-generated constructor stub
+
 	}
 
 	public Order(int orderId, int customerId, int campaignId, int gameId, String shipmentCity) {

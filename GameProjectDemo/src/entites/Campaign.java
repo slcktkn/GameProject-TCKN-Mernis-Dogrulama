@@ -10,7 +10,7 @@ public class Campaign implements IEntity {
 	
 	public Campaign() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Campaign(int id, int orderId, String campaignName) {

@@ -21,6 +21,7 @@ public class CustomerManager implements ICustomerService {
 		System.out.println("Customer added :"+customer.getFirstName() + customer.getLastName());
 		}else {
 			System.out.println("Invalid person :"+customer.getNationalityId());
+			return;
 		}
 		
 	}

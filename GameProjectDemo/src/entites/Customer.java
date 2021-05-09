@@ -15,7 +15,7 @@ public class Customer implements IEntity {
 	
 	public Customer() {
 		super();
-		// TODO Auto-generated constructor stub
+	
 	}
 
 	public Customer(int customerId, String firstName, String lastName, String nationalityId, int dateOfBirth, boolean isOfficer, boolean isStudent) {

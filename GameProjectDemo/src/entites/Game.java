@@ -10,7 +10,7 @@ public class Game implements IEntity {
 	
 	public Game() {
 		super();
-		// TODO Auto-generated constructor stub
+	
 	}
 
 	public Game(int gameId, String gameName, double gamePrice) {

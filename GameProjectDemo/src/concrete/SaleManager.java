@@ -19,13 +19,16 @@ public void sell(Customer customer, Order order, Game[] games) {
 	
 	for(Game game:games) {
 		if(customer.isStudent()) {
-			price = game.getGamePrice();	
-			System.out.println("game ordered for: "+customer.getFirstName()+" game name: "+game.getGameName()+" discount price is: "+price*discountRatio+"TL");
-			price += game.getGamePrice();
+			price = game.getGamePrice()*discountRatio;	
+			System.out.println("game ordered for: "+customer.getFirstName()
+			+" game name: "+game.getGameName()
+			+" discount price is: "+price+"TL");
 			System.out.println("Price= "+ price);
 	}else {
 		price = game.getGamePrice();
-		System.out.println("game ordered for: "+customer.getFirstName());
+		System.out.println("game ordered for: "+customer.getFirstName()
+		+" game name: "+game.getGameName()
+		+" price is: "+price+"TL");
 		
 	}
 	}		
